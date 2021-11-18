@@ -47,3 +47,6 @@ class SeleniumBase:
     def get_element_by_text(self, elements: List[WebElement], name: str) -> WebElement:
         name = name.lower()
         return [element for element in elements if element.text.lower() == name][0]
+
+    def delete_cookie(self, cookie_name: str) -> None:
+        self.driver.delete_cookie(cookie_name)
