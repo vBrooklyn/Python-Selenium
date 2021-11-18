@@ -1,5 +1,3 @@
-import time
-
 import pytest
 
 from pom.homepage_nav import HomepageNav
@@ -12,5 +10,5 @@ class TestHomepage:
         homepage_nav = HomepageNav(self.driver)
         for indx in range(12):
             homepage_nav.get_nav_links()[indx].click()
-            time.sleep(1.5)
+
 
