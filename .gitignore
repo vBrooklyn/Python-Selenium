@@ -1,6 +1,6 @@
-.idea/
+**/.idea/
 venv/
 .pytest_cache/
 .env
 pytest.ini
-*.pyc
+**/__pycache__/
